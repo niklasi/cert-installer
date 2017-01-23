@@ -1,6 +1,10 @@
 # Cert-installer
 
-Install, and optinally trust, certificates for MacOS, Linux and Windows.
+Install, and optinally trust, ca-certificates for MacOS, Linux and Windows.
+
+# Install
+
+npm install cert-installer -g
 
 # Usage
 
