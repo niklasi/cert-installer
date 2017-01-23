@@ -1,6 +1,6 @@
 # Cert-installer
 
-Install, and optinally trust, ca-certificates for MacOS and Windows.
+Install, and optionally trust, ca-certificates for MacOS and Windows.
 
 # Install
 
