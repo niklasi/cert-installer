@@ -1,7 +1,7 @@
 {
   "name": "cert-installer",
-  "version": "1.0.0",
-  "description": "Add certificates to MacOS, Windows and Linux.",
+  "version": "1.0.1",
+  "description": "Add certificates to MacOS and Windows.",
   "main": "index.js",
   "scripts": {
     "test": "standard && ./bin/cert-installer -h"
