@@ -1,0 +1,33 @@
+#! /usr/bin/env node
+
+var argv = require('minimist')(process.argv.slice(2))
+var installCert = require('../')
+
+var help = function () {
+  console.log([]
+    .concat('cert-installer ' + require('../package.json').version)
+    .concat('')
+    .concat('usage:')
+    .concat('cert-install path/to/cert -t')
+    .concat('-t # trust the certificate')
+    .join('\n'))
+}
+
+if (argv.version || argv.v) {
+  console.log(require('../package.json').version)
+  process.exit()
+}
+
+if (argv.help || argv.h || argv['?'] || (argv._.length === 0)) {
+  help()
+  process.exit()
+}
+
+installCert(argv._[0], {trust: argv.t || false}, function (err) {
+  if (err) {
+    console.log('error:', err)
+    console.log()
+    help()
+    process.exit(err.code || 1)
+  }
+})

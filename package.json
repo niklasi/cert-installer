@@ -1,0 +1,34 @@
+{
+  "name": "cert-installer",
+  "version": "1.0.0",
+  "description": "Add certificates to MacOS, Windows and Linux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && ./bin/cert-installer -h"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niklasi/cert-installer.git"
+  },
+  "keywords": [
+    "certificate",
+    "install",
+    "tls",
+    "ssl"
+  ],
+  "author": "Niklas Ingholt",
+  "license": "ISC",
+  "homepage": "https://github.com/niklasi/cert-installer#readme",
+  "bugs": {
+    "url": "https://github.com/niklasi/cert-installer/issues"
+  },
+  "bin": {
+    "cert-installer": "./bin/cert-installer"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
