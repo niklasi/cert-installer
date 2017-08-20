@@ -4,7 +4,7 @@
   "description": "Add certificates to MacOS and Windows.",
   "main": "index.js",
   "scripts": {
-    "test": "standard && ./bin/cert-installer -h"
+    "test": "standard && node bin/cert-installer -h"
   },
   "repository": {
     "type": "git",
